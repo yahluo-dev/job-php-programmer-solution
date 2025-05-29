@@ -17,7 +17,8 @@ final class UpdateCustomerAction extends ParentAction
     public function run(UpdateCustomerRequest $request): Customer
     {
         $data = $request->sanitize([
-            // add your request data here
+            'name',
+            'email'
         ]);
 
         return $this->updateCustomerTask->run($data, $request->id);

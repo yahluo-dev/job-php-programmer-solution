@@ -17,8 +17,8 @@ final class CreateCustomerAction extends ParentAction
     public function run(CreateCustomerRequest $request): Customer
     {
         $data = $request->sanitize([
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|max:255'
+            'name',
+            'email'
         ]);
 
         return $this->createCustomerTask->run($data);
