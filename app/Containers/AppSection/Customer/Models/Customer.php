@@ -7,11 +7,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 final class Customer extends ParentModel
 {
-    protected $fillable = [];
+    protected $fillable = [
+        "name",
+        "email"
+    ];
 
     public function customer_groups(): BelongsToMany
     {
         return $this->belongsToMany(CustomerGroup::class)->withTimestamps();
     }
-
 }

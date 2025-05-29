@@ -13,6 +13,9 @@ use App\Ship\Parents\Repositories\Repository as ParentRepository;
 final class CustomerRepository extends ParentRepository
 {
     protected $fieldSearchable = [
-        // 'id' => '=',
+        'id' => '=',
+        'name' => 'like',
+        'email' => '=',
+        'created_at' => '=',
     ];
 }
