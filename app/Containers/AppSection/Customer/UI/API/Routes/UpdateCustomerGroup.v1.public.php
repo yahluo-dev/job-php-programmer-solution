@@ -25,6 +25,4 @@
 use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerGroupController;
 use Illuminate\Support\Facades\Route;
 
-Route::patch('customergroups', [CustomerGroupController::class, 'update'])
-    ->middleware(['auth:api']);
-
+Route::patch('customergroups', [CustomerGroupController::class, 'update']);

@@ -26,4 +26,3 @@ use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('customers/{id}', [CustomerController::class, 'findById']);
-#    ->middleware(['auth:api']);

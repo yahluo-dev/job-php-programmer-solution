@@ -25,6 +25,4 @@
 use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerGroupController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('customergroups', [CustomerGroupController::class, 'create'])
-    ->middleware(['auth:api']);
-
+Route::post('customergroups', [CustomerGroupController::class, 'create']);

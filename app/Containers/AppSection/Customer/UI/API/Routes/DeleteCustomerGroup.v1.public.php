@@ -25,6 +25,4 @@
 use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerGroupController;
 use Illuminate\Support\Facades\Route;
 
-Route::delete('customergroups/{id}', [CustomerGroupController::class, 'delete'])
-    ->middleware(['auth:api']);
-
+Route::delete('customergroups/{id}', [CustomerGroupController::class, 'delete']);

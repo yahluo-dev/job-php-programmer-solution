@@ -25,6 +25,4 @@
 use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerGroupController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('customergroups/{id}', [CustomerGroupController::class, 'findById'])
-    ->middleware(['auth:api']);
-
+Route::get('customergroups/{id}', [CustomerGroupController::class, 'findById']);

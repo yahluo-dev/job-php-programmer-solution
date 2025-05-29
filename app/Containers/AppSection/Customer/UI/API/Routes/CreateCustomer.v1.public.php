@@ -26,4 +26,3 @@ use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('customers', [CustomerController::class, 'create']);
-#    ->middleware(['auth:api']);
