@@ -7,7 +7,7 @@ use App\Containers\AppSection\Customer\Tasks\FindCustomerGroupByIdTask;
 use App\Containers\AppSection\Customer\UI\API\Requests\FindCustomerGroupByIdRequest;
 use App\Ship\Parents\Actions\Action as ParentAction;
 
-final class FindCustomerGroupAction extends ParentAction
+final class FindCustomerGroupByIdAction extends ParentAction
 {
     public function __construct(
         private readonly FindCustomerGroupByIdTask $findCustomerGroupByIdTask,

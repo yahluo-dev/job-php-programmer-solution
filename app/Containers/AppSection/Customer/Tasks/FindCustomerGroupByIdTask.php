@@ -6,7 +6,7 @@ use App\Containers\AppSection\Customer\Data\Repositories\CustomerGroupRepository
 use App\Containers\AppSection\Customer\Models\CustomerGroup;
 use App\Ship\Parents\Tasks\Task as ParentTask;
 
-final class FindCustomerGroupTask extends ParentTask
+final class FindCustomerGroupByIdTask extends ParentTask
 {
     public function __construct(
         private readonly CustomerGroupRepository $repository,
