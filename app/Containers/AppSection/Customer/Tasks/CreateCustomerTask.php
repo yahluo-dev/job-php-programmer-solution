@@ -15,7 +15,6 @@ final class CreateCustomerTask extends ParentTask
 
     public function run(array $data): Customer
     {
-        var_dump($data);
         return $this->repository->create($data);
     }
 }

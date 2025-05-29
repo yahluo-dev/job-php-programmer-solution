@@ -4,7 +4,7 @@
  * @apiGroup           Customer
  * @apiName            
  *
- * @api                {PATCH} /v1/customers/:id Update
+ * @api                {POST} /v1/customergroups Create
  * @apiDescription     Endpoint description here...
  *
  * @apiVersion         1.0.0
@@ -22,8 +22,9 @@
  * }
  */
 
-use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerController;
+use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerGroupController;
 use Illuminate\Support\Facades\Route;
 
-Route::patch('customers', [CustomerController::class, 'update']);
-#    ->middleware(['auth:api']);
+Route::post('customergroups', [CustomerGroupController::class, 'create'])
+    ->middleware(['auth:api']);
+

@@ -4,16 +4,12 @@ namespace App\Containers\AppSection\Customer\UI\API\Requests;
 
 use App\Ship\Parents\Requests\Request as ParentRequest;
 
-final class UpdateCustomerRequest extends ParentRequest
+final class CreateCustomerGroupRequest extends ParentRequest
 {
     protected array $decode = [];
 
     public function rules(): array
     {
-        return [
-            'id'     => 'required',
-            'name'     => 'min:2|max:400',
-            'email'    => 'email|max:200'
-        ];
+        return [];
     }
 }

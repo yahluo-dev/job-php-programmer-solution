@@ -4,7 +4,7 @@
  * @apiGroup           Customer
  * @apiName            
  *
- * @api                {PATCH} /v1/customers/:id Update
+ * @api                {DELETE} /v1/customergroups/:id Delete
  * @apiDescription     Endpoint description here...
  *
  * @apiVersion         1.0.0
@@ -22,8 +22,9 @@
  * }
  */
 
-use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerController;
+use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerGroupController;
 use Illuminate\Support\Facades\Route;
 
-Route::patch('customers', [CustomerController::class, 'update']);
-#    ->middleware(['auth:api']);
+Route::delete('customergroups/{id}', [CustomerGroupController::class, 'delete'])
+    ->middleware(['auth:api']);
+
