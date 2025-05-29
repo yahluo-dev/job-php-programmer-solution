@@ -10,6 +10,9 @@ final class CreateCustomerRequest extends ParentRequest
 
     public function rules(): array
     {
-        return [];
+        return [
+            'name'     => 'required|min:2|max:400',
+            'email'    => 'required|email|max:200|unique:users,email'
+        ];
     }
 }
