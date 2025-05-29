@@ -10,6 +10,8 @@ final class CreateCustomerGroupRequest extends ParentRequest
 
     public function rules(): array
     {
-        return [];
+        return [
+            'name'     => 'required|min:2|max:400'
+        ];
     }
 }
