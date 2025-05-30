@@ -17,7 +17,7 @@ final class UpdateCustomerGroupAction extends ParentAction
     public function run(UpdateCustomerGroupRequest $request): CustomerGroup
     {
         $data = $request->sanitize([
-            // add your request data here
+            'name',
         ]);
 
         return $this->updateCustomerGroupTask->run($data, $request->id);

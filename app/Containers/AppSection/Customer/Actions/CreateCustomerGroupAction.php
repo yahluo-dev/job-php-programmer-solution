@@ -17,7 +17,7 @@ final class CreateCustomerGroupAction extends ParentAction
     public function run(CreateCustomerGroupRequest $request): CustomerGroup
     {
         $data = $request->sanitize([
-            // add your request data here
+            'name'
         ]);
 
         return $this->createCustomerGroupTask->run($data);
