@@ -51,6 +51,6 @@ final class CustomerController extends ApiController
     {
         $action->run($request);
 
-        return Response::noContent();
+        return Response::ok();
     }
 }
