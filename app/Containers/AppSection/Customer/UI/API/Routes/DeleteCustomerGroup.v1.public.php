@@ -2,7 +2,7 @@
 
 /**
  * @apiGroup           Customer
- * @apiName            
+ * @apiName            DeleteCustomerGroup
  *
  * @api                {DELETE} /v1/customergroups/:id Delete
  * @apiDescription     Endpoint description here...

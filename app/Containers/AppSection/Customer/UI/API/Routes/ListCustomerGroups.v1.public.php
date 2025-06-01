@@ -2,7 +2,7 @@
 
 /**
  * @apiGroup           Customer
- * @apiName            
+ * @apiName            ListCustomerGroups
  *
  * @api                {GET} /v1/customergroups List
  * @apiDescription     Endpoint description here...

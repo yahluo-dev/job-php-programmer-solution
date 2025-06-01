@@ -2,7 +2,7 @@
 
 /**
  * @apiGroup           Customer
- * @apiName            
+ * @apiName            AttachCustomerToGroup
  *
  * @api                {POST} /v1/customers/:customer_id/attach-group Attach To Group
  * @apiDescription     Endpoint description here...

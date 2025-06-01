@@ -2,7 +2,7 @@
 
 /**
  * @apiGroup           Customer
- * @apiName            
+ * @apiName            FindCustomerGroup
  *
  * @api                {GET} /v1/customergroups/:id Find By Id
  * @apiDescription     Endpoint description here...

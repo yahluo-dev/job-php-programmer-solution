@@ -2,7 +2,7 @@
 
 /**
  * @apiGroup           Customer
- * @apiName            
+ * @apiName            UpdateCustomerGroup
  *
  * @api                {PATCH} /v1/customergroups Update
  * @apiDescription     Endpoint description here...
