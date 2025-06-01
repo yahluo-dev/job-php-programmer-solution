@@ -18,6 +18,7 @@ final class CustomerTransformer extends ParentTransformer
             'id' => $customer->getHashedKey(),
             'name' => $customer->name,
             'email' => $customer->email,
+            'customer_groups' => $customer->customer_groups,
             'created_at' => $customer->created_at,
             'updated_at' => $customer->updated_at,
             'readable_created_at' => $customer->created_at->diffForHumans(),
