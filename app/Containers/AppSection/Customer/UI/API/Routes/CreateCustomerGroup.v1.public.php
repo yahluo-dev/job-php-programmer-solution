@@ -4,7 +4,7 @@
  * @apiGroup           Customer
  * @apiName            CreateCustomerGroup
  *
- * @api                {POST} /v1/customergroups Create
+ * @api                {POST} /v1/customer-groups Create
  * @apiDescription     Endpoint description here...
  *
  * @apiVersion         1.0.0
@@ -25,4 +25,4 @@
 use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerGroupController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('customergroups', [CustomerGroupController::class, 'create']);
+Route::post('customer-groups', [CustomerGroupController::class, 'create']);

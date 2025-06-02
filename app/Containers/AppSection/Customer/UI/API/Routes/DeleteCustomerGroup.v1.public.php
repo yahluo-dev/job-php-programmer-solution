@@ -4,7 +4,7 @@
  * @apiGroup           Customer
  * @apiName            DeleteCustomerGroup
  *
- * @api                {DELETE} /v1/customergroups/:id Delete
+ * @api                {DELETE} /v1/customer-groups/:id Delete
  * @apiDescription     Endpoint description here...
  *
  * @apiVersion         1.0.0
@@ -25,4 +25,4 @@
 use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerGroupController;
 use Illuminate\Support\Facades\Route;
 
-Route::delete('customergroups/{id}', [CustomerGroupController::class, 'delete']);
+Route::delete('customer-groups/{id}', [CustomerGroupController::class, 'delete']);

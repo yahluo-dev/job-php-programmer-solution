@@ -4,7 +4,7 @@
  * @apiGroup           Customer
  * @apiName            UpdateCustomerGroup
  *
- * @api                {PATCH} /v1/customergroups Update
+ * @api                {PATCH} /v1/customer-groups Update
  * @apiDescription     Endpoint description here...
  *
  * @apiVersion         1.0.0
@@ -25,4 +25,4 @@
 use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerGroupController;
 use Illuminate\Support\Facades\Route;
 
-Route::patch('customergroups', [CustomerGroupController::class, 'update']);
+Route::patch('customer-groups', [CustomerGroupController::class, 'update']);

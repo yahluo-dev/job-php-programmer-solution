@@ -18,4 +18,5 @@ final class CustomerRepository extends ParentRepository
         'email' => '=',
         'created_at' => '=',
     ];
+
 }

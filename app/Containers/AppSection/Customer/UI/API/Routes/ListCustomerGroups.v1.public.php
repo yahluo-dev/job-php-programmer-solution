@@ -4,7 +4,7 @@
  * @apiGroup           Customer
  * @apiName            ListCustomerGroups
  *
- * @api                {GET} /v1/customergroups List
+ * @api                {GET} /v1/customer-groups List
  * @apiDescription     Endpoint description here...
  *
  * @apiVersion         1.0.0
@@ -25,4 +25,4 @@
 use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerGroupController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('customergroups', [CustomerGroupController::class, 'list']);
+Route::get('customer-groups', [CustomerGroupController::class, 'list']);

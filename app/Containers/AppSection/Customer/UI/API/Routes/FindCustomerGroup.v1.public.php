@@ -4,7 +4,7 @@
  * @apiGroup           Customer
  * @apiName            FindCustomerGroup
  *
- * @api                {GET} /v1/customergroups/:id Find By Id
+ * @api                {GET} /v1/customer-groups/:id Find By Id
  * @apiDescription     Endpoint description here...
  *
  * @apiVersion         1.0.0
@@ -25,4 +25,4 @@
 use App\Containers\AppSection\Customer\UI\API\Controllers\CustomerGroupController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('customergroups/{id}', [CustomerGroupController::class, 'findById']);
+Route::get('customer-groups/{id}', [CustomerGroupController::class, 'findById']);
